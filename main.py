@@ -24,8 +24,10 @@ def main():
     # Initialize recognizer class (for recognizing speech)
     recognizer = sr.Recognizer()
 
+    DEVICE_INDEX = 0  # Index of device you use for input (microphone)
+
     # Capture audio from the microphone
-    with sr.Microphone(sample_rate=16000, device_index=0) as source:
+    with sr.Microphone(sample_rate=16000, device_index=DEVICE_INDEX) as source:
         print("Say something...")
         recognizer.adjust_for_ambient_noise(source)
         recognizer.energy_threshold = 1000
