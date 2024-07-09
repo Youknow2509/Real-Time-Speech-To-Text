@@ -1,0 +1,25 @@
+# env
+
+.env 
+**/.env
+
+# node_modules
+
+node_modules
+**/node_modules
+
+# File MacOS
+
+.DS_Store
+**/.DS_Store
+
+# File Windows
+
+Thumbs.db
+**/Thumbs.db
+
+# vscode
+
+.vscode
+**/.vscode  
+
